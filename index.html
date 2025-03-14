@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تحميل تطبيق موثوق</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #0a192f;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: white;
+      }
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        background: #112240;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 255, 170, 0.2);
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #1e2a47;
+      }
+      .app-logo {
+        width: 110px;
+        height: 110px;
+        border-radius: 20px;
+        margin-right: 15px;
+      }
+      .app-info {
+        text-align: left;
+      }
+      .app-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: #64ffda;
+      }
+      .app-developer {
+        font-size: 15px;
+        color: #8892b0;
+      }
+      .rating {
+        color: #ffd700;
+        font-size: 18px;
+      }
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #64ffda;
+        color: #112240;
+        text-decoration: none;
+        padding: 14px 25px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(100, 255, 218, 0.3);
+      }
+      .download-btn i {
+        margin-right: 10px;
+      }
+      .download-btn:hover {
+        background-color: #48e1c1;
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(100, 255, 218, 0.5);
+      }
+      .apk-size {
+        margin-top: 5px;
+        font-size: 15px;
+        color: #a8b2d1;
+      }
+      .description {
+        margin-top: 20px;
+        font-size: 17px;
+        color: #ccd6f6;
+        text-align: left;
+      }
+      .features {
+        margin-top: 30px;
+        text-align: left;
+        padding: 15px;
+      }
+      .feature {
+        display: flex;
+        align-items: center;
+        background: #1e2a47;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        color: white;
+        transition: 0.3s;
+      }
+      .feature:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 10px rgba(100, 255, 218, 0.3);
+      }
+      .feature i {
+        font-size: 24px;
+        color: #64ffda;
+        margin-right: 10px;
+      }
+      footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #8892b0;
+      }
+      .image-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 270px; /* تقليل ارتفاع الصور */
+        overflow: hidden;
+        position: relative;
+      }
+      .image-slider img {
+        width: auto;
+        max-width: 1000px;
+        height: 100%;
+        object-fit: contain; /* يضمن ظهور الصورة كاملة */
+        position: absolute;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+      }
+      .image-slider img.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="photo_2025-03-14_21-28-16.jpg" alt="موثوق" class="app-logo" />
+        <div class="app-info">
+          <div class="app-title">موثوق - Mothooq</div>
+          <div class="app-developer">By Mothooq Team</div>
+          <div class="rating">★★★★☆ (4.7)</div>
+        </div>
+      </div>
+
+      <div class="image-slider">
+        <img
+          src="cSs/photo_2025-03-14_21-32-41.jpg"
+          class="active"
+          alt="صورة 1"
+        />
+        <img src="cSs/photo_2025-03-14_21-32-43.jpg" alt="صورة 2" />
+        <img src="cSs/photo_2025-03-14_21-32-53.jpg" alt="صورة 3" />
+        <img src="cSs/photo_2025-03-14_21-32-40.jpg" alt="صورة 3" />
+      </div>
+
+      <div class="description">
+        <h3>عن التطبيق</h3>
+        <p>
+          موثوق هو التطبيق الأول في مصر الذي يربط بين البائعين والمشترين لبيع
+          وشراء السيارات المستعملة بطريقة آمنة وموثوقة. يضمن التطبيق للمشترين
+          الحصول على سيارات بحالة جيدة من خلال إلزام البائعين بإجراء فحص شامل
+          قبل نشر السيارة، بالإضافة إلى تقديم خصومات حصرية على الصيانة عند
+          إجرائها في المراكز المتعاقدة معنا.
+        </p>
+      </div>
+
+      <div class="features">
+        <h3>لماذا تختار موثوق؟</h3>
+        <div class="feature">
+          <i class="fas fa-car"></i> كل سيارة يتم فحصها لضمان حالتها الفنية قبل
+          البيع
+        </div>
+        <div class="feature">
+          <i class="fas fa-user-shield"></i> حماية وأمان عالي أثناء عمليات البيع
+          والشراء
+        </div>
+        <div class="feature">
+          <i class="fas fa-search"></i> محرك بحث متطور للعثور على السياره بسهولة
+        </div>
+        <div class="feature">
+          <i class="fas fa-handshake"></i> تواصل مباشر مع البائعين بدون وسيط
+        </div>
+        <div class="feature">
+          <i class="fas fa-wallet"></i> خصومات حصرية على الصيانة عند إجرائها في
+          المراكز المعتمدة.
+        </div>
+      </div>
+
+      <button class="download-btn" id="downloadBtn">
+        <i class="fas fa-download"></i> تحميل APK
+      </button>
+      <div class="apk-size">حجم التطبيق: 67.2MB</div>
+
+      <footer>© 2025 جميع الحقوق محفوظة | موثوق - Mothooq</footer>
+    </div>
+
+    <script>
+      let index = 0;
+      const images = document.querySelectorAll(".image-slider img");
+
+      function changeImage() {
+        images[index].classList.remove("active");
+        index = (index + 1) % images.length;
+        images[index].classList.add("active");
+      }
+
+      setInterval(changeImage, 3000);
+
+      document
+        .getElementById("downloadBtn")
+        .addEventListener("click", function () {
+          window.location.href =
+            "https://drive.google.com/drive/u/1/folders/1IYZBUvbWJ6e18FKV7sm7NFvf_nKkDbiT";
+        });
+    </script>
+  </body>
+</html>
